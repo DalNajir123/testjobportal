@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../Logo/Logo";
 
 export default function Footer() {
     return (
@@ -7,13 +8,7 @@ export default function Footer() {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <Link to="/" className="flex items-center">
-                            <img
-                                src="https://i.pinimg.com/originals/37/58/63/375863aeb2bb847fc479bb3b0b3cb2b7.jpg"
-                                className="mr-3 h-40 rounded-2xl"
-                                alt="Logo"
-                            />
-                        </Link>
+                    <Logo/>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>

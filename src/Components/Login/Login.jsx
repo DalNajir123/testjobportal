@@ -1,5 +1,6 @@
 // Login.js
 import React, { useState } from 'react';
+import Logo from '../Logo/Logo';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -13,7 +14,8 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-purple-200">
       <div className="max-w-md w-full space-y-8 p-8 bg-purple-400  rounded-md">
-        <h2 className="text-3xl font-extrabold text-center text-gray-800">Login</h2>
+      
+        <h2 className="text-3xl font-extrabold text-center text-gray-800"><Logo/>Login</h2>
         <form className="mt-8 space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div>
             <label htmlFor="username" className="sr-only">

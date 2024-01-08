@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from '../Logo/Logo';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ const SignUp = () => {
         className=" mt-5 space-y-6 rounded shadow-md w-96"
         onSubmit={handleSubmit}
       >
-        <h2 className="text-3xl font-extrabold text-center text-gray-800 mt-5">Ragistration</h2>
+        <h2 className="text-3xl font-extrabold text-center text-gray-800 mt-5"> <Logo/>Ragistration</h2>
         <div className="mb-4">
           {/* <label className="block text-gray-700 text-sm font-bold mb-2">
             Username
