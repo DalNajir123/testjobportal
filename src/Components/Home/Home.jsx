@@ -1,8 +1,38 @@
 import React from 'react';
+import Slider from "../../Slider"
+import "./Home.css"
+
+const slide =[
+  "./1.webp",
+  "./2.webp",
+]
 
 const HomePage = () => {
   return (
     <div className="bg-purple-200">
+
+      <section className="bg-purple-300 text-white py-16 pt-3">
+        {/* <div id='top-text'>
+          <h1 id="top" data-text="Explore Opportunities With Top Companies!">Explore Opportunities With Top Companies! </h1>
+        </div> */}
+
+        <div className='text-center mb-8 '>
+          <h1 class="animated-text ">
+            <span className='shadow-xl shadow-fuchsia-700'>Explore Opportunities With Top Companies!</span>
+          </h1>
+        </div>
+        
+        <div className='flex justify-center items-center  '>
+          <div className='w-[60%] '>
+            <Slider autoSlide={false}>
+              {slide.map((s)=>(
+                <img  src={s} />
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-purple-400 text-white py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Find Your Dream Jobs</h2>

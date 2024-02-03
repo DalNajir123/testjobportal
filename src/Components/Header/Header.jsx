@@ -6,7 +6,7 @@ import Logo from "../Logo/Logo";
 export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0 ">
-            <nav className=" border-gray-900  lg:px-6 py-4 bg-purple-600 text-white">
+            <nav className="border-gray-900  lg:px-6 py-4 bg-purple-600 text-white">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Logo/>
                     {/* header button link */}
